@@ -239,10 +239,10 @@ import (
 
 ### 常量
 
-- 常量均需使用全部大写字母组成，并使用下划线分词：
+- 常量应该使用驼峰命名法，并且首字母大写：
 
 	```go
-	const APP_VER = "0.7.0.1110 Beta"
+	const AppVer = "0.7.0.1110 Beta"
 	```
 
 - 如果是枚举类型的常量，需要先创建相应类型：
@@ -374,7 +374,7 @@ func IsRepositoryExist(user *User, repoName string) (bool, error) { ...
 
 ### 基本约束
 
-- 所有应用的 `main` 包需要有 `APP_VER` 常量表示版本，格式为 `X.Y.Z.Date [Status]`，例如：`0.7.6.1112 Beta`。
+- 所有应用的 `main` 包需要有 `APPVer` 常量表示版本，格式为 `X.Y.Z.Date [Status]`，例如：`0.7.6.1112 Beta`。
 - 单独的库需要有函数 `Version` 返回库版本号的字符串，格式为 `X.Y.Z[.Date]`。
 - 当单行代码超过 80 个字符时，就要考虑分行。分行的规则是以参数为单位将从较长的参数开始换行，以此类推直到每行长度合适：
 

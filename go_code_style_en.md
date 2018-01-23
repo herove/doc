@@ -245,10 +245,10 @@ import (
 
 ### Constants
 
-- Constant should use all capital letters and use underscore `_` to separate words.
+- Constant should use Camel Case style, and capitalize the first letter.
 
 	```go
-	const APP_VER = "0.7.0.1110 Beta"
+	const AppVer = "0.7.0.1110 Beta"
 	```
 
 - If you need enumerated type, you should define the corresponding type first:
@@ -382,7 +382,7 @@ func IsRepositoryExist(user *User, repoName string) (bool, error) { ...
 
 ### Basic Rules
 
-- All applications that have `main` package should have constant `APP_VER` to indicate its version with format `X.Y.Z.Date [Status]`. For example, `0.7.6.1112 Beta`.
+- All applications that have `main` package should have constant `AppVer` to indicate its version with format `X.Y.Z.Date [Status]`. For example, `0.7.6.1112 Beta`.
 - A library/package should have function `Version` to return its version in `string` type with format `X.Y.Z[.Date]`.
 - You should consider split lines of code that have more than 80 characters. The rule is use to argument as the unit to split:
 
